@@ -1,0 +1,86 @@
+.introduction-text {
+  border-color: rgb(49, 55, 61);
+  border-style: none;
+  border-width: 0;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  box-sizing: border-box;
+  color: rgb(49, 55, 61);
+  cursor: none;
+  display: block;
+  font-family: "Dazzed", system-ui, -apple-system, "SF Pro Display",
+    BlinkMacSystemFont, Helvetica, Lato, Arial, "Segoe UI", Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 200.285px;
+  letter-spacing: normal;
+  line-height: 32.25px;
+  margin: 0;
+  outline-color: rgb(41, 91, 255);
+  padding: 0;
+  text-rendering: optimizelegibility;
+  vertical-align: baseline;
+  width: 600px;
+  -webkit-font-smoothing: antialiased;
+}
+.introduction-text-adress {
+  border-color: rgb(49, 55, 61);
+  border-style: none;
+  border-width: 0;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  box-sizing: border-box;
+  color: rgb(49, 55, 61);
+  cursor: none;
+  display: block;
+  font-family: "Dazzed", system-ui, -apple-system, "SF Pro Display",
+    BlinkMacSystemFont, Helvetica, Lato, Arial, "Segoe UI", Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 28.285px;
+  letter-spacing: normal;
+  line-height: 32.25px;
+  margin: 0;
+  outline-color: rgb(41, 91, 255);
+  padding: 0;
+  text-rendering: optimizelegibility;
+  vertical-align: baseline;
+  width: 600px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.message-to-customer {
+  border-color: rgb(49, 55, 61);
+  border-style: none;
+  border-width: 0;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  box-sizing: border-box;
+  color: rgb(49, 55, 61);
+  cursor: none;
+  display: block;
+  font-family: "Dazzed", system-ui, -apple-system, "SF Pro Display",
+    BlinkMacSystemFont, Helvetica, Lato, Arial, "Segoe UI", Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 28.285px;
+  letter-spacing: normal;
+  line-height: 32.25px;
+  margin: 0;
+  outline-color: rgb(41, 91, 255);
+  padding: 0;
+  text-rendering: optimizelegibility;
+  vertical-align: baseline;
+  width: 600px;
+  -webkit-font-smoothing: antialiased;
+}
+

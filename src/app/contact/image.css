@@ -1,0 +1,23 @@
+.team-member {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2em;
+}
+/* paleturquoise	#AFEEEE	rgb(175,238,238)
+ 	turquoise	#40E0D0	rgb(64,224,208)
+ 	mediumturquoise	#48D1CC	rgb(72,209,204)
+ 	darkturquoise	#00CED1	rgb(0,206,209) */
+.turqoise-one {
+  background-color: #afeeee;
+}
+.turqoise-two {
+  background-color: #40e0d0;
+}
+.turqoise-three {
+  background-color: #48d1cc;
+}
+.turqoise-four {
+  background-color: #99ffff;
+}
