@@ -3,17 +3,25 @@
 import * as React from "react";
 import { FooterComponent } from "@/components/footer";
 import { HeaderComponent } from "@/components/header";
+import { Button, Link } from "@mui/joy";
 import Image from "next/image";
 import "./text.css";
 import "./image.css";
 import Input from "@mui/joy/Input";
-
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Textarea from "@mui/joy/Textarea";
 
-import { Button } from "@mui/joy";
+
 import CheckCircleOutline from "@mui/icons-material/CheckCircleOutline";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import CircularProgress from "@mui/material/CircularProgress";
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['MuseoModerno:600,700', 'cursive']
+  }
+});
 export default function ContactPage() {
   const [loading, setLoading] = React.useState(false);
   const [sent, setSent] = React.useState(false);
@@ -71,14 +79,23 @@ export default function ContactPage() {
                 
                 </div>
                 <p className="message-to-customer">"It gives me pleasure to act as a bridge, converting your ideas to our team with a variety of expertise, ensuring the optimal outcomes."</p>
+                <Link className= "email" href="/">
+    <MailOutlineIcon /> E-mail me directly 🌍
+</Link>
+                
               </div>
             </div>
-            <div className="w-1/2  turqoise-four  ">
-              <div className="p-8">
-                <h1 className="text-black text-2xl text-center font-bold border-b-2 border-black ">
+            {/* <div className="w-1/2  turqoise-four bg-[url('/bridgeimage.jpg')] "> */}
+            <div className="w-1/2  turqoise-four">
+            {/* <div className="w-1/2 " style={{backgroundImage: `url('/bridgeimage.jpg')` }}> */}
+              <div className="pt-16 pb-28 pe-28 ps-28">
+              <h1 className="catch-phrase font-museo font-museo-bold text-8xl">
+               Let's Connect
+        </h1>
+                {/* <h1 className="introduction-text ">
                   {" "}
                   Hit Us Up
-                </h1>
+                </h1> */}
                 <div className="flex justify-between gap-4 pt-4">
                   <Input
                     className="w-full"
@@ -123,30 +140,21 @@ export default function ContactPage() {
 
                 <Textarea
                   minRows={4}
-                  className="mt-4"
+                  className="mt-4 mb-10"
                   placeholder="What's Up ? "
                   color="neutral"
                   size="md"
                   variant="plain"
                 ></Textarea>
-                <>
-                  {loading && (
-                    <div className="inline-flex items-center mt-4 border border-gray-500 px-4 py-2 text-sm font-medium text-gray-700 bg-white">
-                      <CircularProgress size={14} />
-                      <span className="ml-2">Loading...</span>
-                    </div>
-                  )}
-                  {!loading && (
-                    <Button
-                      onClick={handleClick}
-                      className="mt-4"
-                      variant="outlined"
-                      endIcon={sent && <CheckCircleOutline />}
-                    >
-                      {sent ? "Sent ✅" : "Send Email"}
-                    </Button>
-                  )}
-                </>
+               <Button
+                  onClick={handleClick}
+                  className="mt-4"
+                  variant="outlined"
+                  loading={loading}
+                >
+             
+                  {sent ? "Sent ✅" : "Send Email"}
+                </Button>
               </div>
             </div>
       </div>

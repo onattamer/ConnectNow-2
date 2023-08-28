@@ -20,7 +20,7 @@ export function HeaderComponent() {
         </div>
       </div>
 
-      <div className="flex w-1/2 p-2 items-center justify-end bg-new-color  turqoise-four  ">
+      <div className="flex w-1/2 p-2 items-center justify-end bg-new-color  turqoise-four ">
        
 
       <nav>

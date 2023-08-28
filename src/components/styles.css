@@ -1,14 +1,15 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 36px;
   padding-bottom: 36px;
   margin: 0;
   list-style: none;
   text-align: center;
-  gap: 16px;
+  gap: 40px;
+  margin-right: 20px;
 }
 
 .navbar-link {
@@ -21,7 +22,7 @@
   width: auto;
   text-align: center;
   text-decoration: none;
-  color: #000000;
+  color: #000000 !important;
   transition: 0.3s;
   transition-delay: 0.15s;
   opacity: 1;
